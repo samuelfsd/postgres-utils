@@ -20,3 +20,21 @@ Também podendo ser utilizado em campos específicos.
 SELECT product_id, product_name, unit_price FROM products;
 ```
 
+### Comentários 
+
+Para realizar comentários no SQL / Postgres é utilizando o -- 
+
+Comentando apenas uma linha:
+
+```sql
+-- deixe aqui seu comentário
+```
+
+Para um comentário com múltiplas linhas: 
+
+```sql
+/*
+----- deixe aqui seu comentário -----
+*/
+```
+
