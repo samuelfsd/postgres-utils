@@ -20,9 +20,9 @@ Também podendo ser utilizado em campos específicos.
 SELECT product_id, product_name, unit_price FROM products;
 ```
 
-### Comentários 
+### Comentários
 
-Para realizar comentários no SQL / Postgres é utilizando o -- 
+Para realizar comentários no SQL / Postgres é utilizando o --
 
 Comentando apenas uma linha:
 
@@ -30,7 +30,7 @@ Comentando apenas uma linha:
 -- deixe aqui seu comentário
 ```
 
-Para um comentário com múltiplas linhas: 
+Para um comentário com múltiplas linhas:
 
 ```sql
 /*
@@ -38,3 +38,29 @@ Para um comentário com múltiplas linhas:
 */
 ```
 
+### ALIAS: AS
+
+ALIAS: O Comando AS tem o intuito de renomear as colunas e tabela
+
+```sql
+SELECT
+  product_id AS produto,
+  product_name AS nome,
+  unit_price AS preço
+FROM products;
+```
+
+### LIMIT: Limitando a quantidade de linhas da query
+
+O comando LIMIT que deve ser utilizado para um reconhecimento de tabelas ou colunas que podem ter muitos dados mas querendo passar um filtro melhor
+
+```sql
+SELECT * FROM orders LIMIT 10;
+```
+
+### DISTINCT: Selecionar os valores distintos de uma coluna
+
+```sql
+SELECT DISTINCT contact_title FROM customers;
+```
+Selecionando os valores distintos da tabela customers. Assim mostrando apenas os valores que não se repetem.
